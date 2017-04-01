@@ -1,4 +1,5 @@
 #!/bin/bash
+#Author: Debdeep Dey
 echo "Please make sure that you are connected to the internet "
 read -p "Do you want to see the current status of the repo ? [y/Y]" resp
 if [ $resp = "y" -o $resp = "Y" ];then
