@@ -1,4 +1,6 @@
 #! /usr/bin/php
+#Author: Debdeep Dey
+#Automate script to convert data to json
 <?php
     //open connection to mysql db
 $servername = "localhost";
@@ -16,12 +18,10 @@ $database = "temp_database";
 	
     }
 
-    //echo json_encode($emparray);
-    //write to json file
     $fp = fopen('userdata.json', 'w');
     fwrite($fp, json_encode($emparray));
     fclose($fp);
-    //close connection to db
+    
     echo "Converted Successfully";
      mysqli_close($connection);
 ?>
